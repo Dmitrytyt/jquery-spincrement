@@ -1,0 +1,19 @@
+{
+  "name": "jquery-spincrement",
+  "version": "1.0.0",
+  "description": "A jQuery plugin for incrementing up to a certain number, for effect.",
+  "main": "jquery.spincrement.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmitrytyt/jquery-spincrement.git"
+  },
+  "author": "dmitrytyt <dmitrytyt@ya.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmitrytyt/jquery-spincrement/issues"
+  },
+  "homepage": "https://github.com/Dmitrytyt/jquery-spincrement#readme"
+}
