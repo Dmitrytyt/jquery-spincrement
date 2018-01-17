@@ -34,7 +34,8 @@
       leeway: 50, // percent of duraion
       easing: 'spincrementEasing',
       fade: true,
-      complete: null
+      complete: null,
+	  inputElem: false
     }
     var options = $.extend(defaults, opts)
 
@@ -109,12 +110,12 @@
 
           // Invoke the callback for each step.
           step: function (progress) {
-            obj.html(format(progress * to, dp))
+            (inputElem) ? obj.val(format(progress * to, dp)) : obj.html(format(progress * to, dp));
           },
           complete: function () {
             // Cleanup
-            obj.css('counter', null)
-            obj.html(format(to, dp))
+            obj.css('counter', null);
+            (inputElem) ? obj.val(format(to, dp)) : obj.html(format(to, dp));
 
             // user's callback
             if (options.complete) {
